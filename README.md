@@ -115,7 +115,15 @@ Untracked files:
    cmd> git add.
    cmd> git commit -m "New Commit"
    cmd> git push
- 
+ 22. Some more commands:
+   git init - creates new repo
+   git remote add
+   git diff sourceBranch targetBranch
+   git tag  - add  tagname to refer to the commit
+   git stash - useful to move changes into stash
+   git stach pop - retruves changes from stach and reapplies them
+   git rebase - takes the commnds from orginal branch to current barnch
+   git clean- remove untouched files
 
     
    
