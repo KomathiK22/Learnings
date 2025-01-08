@@ -96,7 +96,10 @@ Untracked files:
         cmd> cd to old folder for the new repo
         cmd> git pull
         cmd> git log
-        
-    
-19. merging and conflict resolution
+18. Undo/Redo Changes
+        cmd> git revert <hashkey>   [ creates new commit to undo whats done in the previous commit] use when on multipls users working on same branch/report for backtracking the commits. creates new commit to undo changes 
+        cmd> git reset <hashkey>    [resets the current branch to shows only the commits upto the one we indicate inm <commit hashkey>]
+        cmd> git reset --soft <hashkey>   [ disregards subsiquent commits but keeps the changes done to them, this default]  -- removes the commits from history but keeps changes
+        cmd> git reset --hard <hashkey>    [ disregards subsiquent commits including the changes done to them]  - removes commits and changes from the history
+20. merging and conflict resolution
    
