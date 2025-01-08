@@ -78,8 +78,9 @@ Untracked files:
         cmd  git show --name-only <hashkey>   [gies showrthand commit info]
         cmd> git reflog  [gives info about all commits on all branches]
 15. push and pull  -git collaboration commands
-        cmd>
-17. undoing and redoing changes
+        cmd>git push  - works if the new branches are aligned with remote repo else take the path and run below command
+       cmd> undoing and redoing cha$ git push --set-upstream origin featureBranch
+nges
         cmd>
 19. merging and conflict resolution
    
