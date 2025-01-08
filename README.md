@@ -65,9 +65,16 @@ Untracked files:
         unstagedFile.txt
 10.git reset, to remove one or more files from stagging
 cmd>git reset   
-11. branches
-12. checking status and inspecting commands
-13. push and pull
-14. undoing and redoing changes
-15. merging and conflict resolution
+11.create branches and work on them
+cmd> $git branch -- shows/Displayes all the branches in the current reporsitoy
+cmd> $git branch featureBranch --creates  name featureBranch
+cmd> $echo branch featureBranch > testFileCheckBranch.txt
+cmd> $git add .
+cmd> $git commit -m "Main branch commit test"
+11. command to change the branches
+    cmd> git checkout <branchName>
+13. checking status and inspecting commands
+14. push and pull
+15. undoing and redoing changes
+16. merging and conflict resolution
    
