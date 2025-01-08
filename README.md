@@ -101,5 +101,21 @@ Untracked files:
         cmd> git reset <hashkey>    [resets the current branch to shows only the commits upto the one we indicate inm <commit hashkey>]
         cmd> git reset --soft <hashkey>   [ disregards subsiquent commits but keeps the changes done to them, this default]  -- removes the commits from history but keeps changes
         cmd> git reset --hard <hashkey>    [ disregards subsiquent commits including the changes done to them]  - removes commits and changes from the history
-20. merging and conflict resolution
+20. merging the branches
+    cmd> cd learnings [ other repo]
+    cmd> git merge springBootMicroservices
+
+21. conflicts resolutions, can happen when same files gets modified by different users same time
+   cmd> navigate to repo folder
+   cmd> git branch
+   cmd> git push -f  [force override of the remote one]
+   cmd> git checkout featureBranch
+   cmd> git push -u origin featureBranch
+   cmd> echo new commit > newCommit.txt
+   cmd> git add.
+   cmd> git commit -m "New Commit"
+   cmd> git push
+ 
+
+    
    
