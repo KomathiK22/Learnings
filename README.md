@@ -11,12 +11,14 @@ cmd>$ git clone https://github.com/KomathiK22/Learnings.git
 3. check remote respositry version
     cmd>git remote -v
 
-4. Get the latest from the branch on github- push - send latest from repo, fetch the latest from the branch
-   cmd>
+
 ------------ git <command> -h - gives the help onthe given command
    >echo Hello World! > Readme.md
-
-6. commits  has a hashKey so its always available and can be reverted, but always remains with same hashKey
+   
+4.git add . [adds all the files with the changes to the staging area]
+   cmd>git add .
+   
+6. git commit -commits  has a hashKey so its always available and can be reverted, but always remains with same hashKey
 cmd> $ git commit -m "initial Commit from gitbash"
 Error-----------------
 Author identity unknown
@@ -32,11 +34,40 @@ cmd> $ git config --global user.email "komathi.kandregula@gmail.com"
 komat@LAPTOP-F4QG0KCM MINGW64 /c/MyGitRepo/Learnings (main)
 cmd>$ git config --global user.name "komathi"
 
-7. 
-8. staging
-9. branches
-10. checking status and inspecting commands
-11. push and pull
-12. undoing and redoing changes
-13. merging and conflict resolution
+7.git log  - gives us an overview of commits done so far
+cmd>$ git log
+commit 80ebef4f4f4810b0ed1b78c76d9e2072a01526c6 (HEAD -> main)
+Author: komathi <komathi.kandregula@gmail.com>
+Date:   Wed Jan 8 11:09:51 2025 -0600
+    initial Commit from gitbash
+commit fbb7211e0ed3104b6c161a3ecd401868c55927b3 (origin/main, origin/HEAD)
+Author: KomathiK22 <komathi.kandregula@gmail.com>
+Date:   Wed Jan 8 10:32:58 2025 -0600
+    Initial commit
+    
+4. Get the latest from the branch on github- push - send latest from repo, fetch the latest from the branch
+   cmd>
+8. staging - staging means marking files to be committed, git add will add all the files to the github repo
+9. git add file1.text file2.txt file3.txt  -- adds one or more files to staging
+sample commands:
+    cmd> $ echo staged > stagedFile.txt
+    cmd>$ echo unstaged >unstagedFile.txt
+    cmd>$ git add. stagedFile.txt
+    cmd> $ git status  - gives an overview of stage and commited/uncommited files
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stagedFile.txt
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        unstagedFile.txt
+10.git reset, to remove one or more files from stagging
+cmd>git reset   
+11. branches
+12. checking status and inspecting commands
+13. push and pull
+14. undoing and redoing changes
+15. merging and conflict resolution
    
