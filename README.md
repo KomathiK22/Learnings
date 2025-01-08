@@ -13,12 +13,30 @@ cmd>$ git clone https://github.com/KomathiK22/Learnings.git
 
 4. Get the latest from the branch on github- push - send latest from repo, fetch the latest from the branch
    cmd>
+------------ git <command> -h - gives the help onthe given command
+   >echo Hello World! > Readme.md
 
-5. commits
-6. staging
-7. branches
-8. checking status and inspecting commands
-9. push and pull
-10. undoing and redoing changes
-11. merging and conflict resolution
+6. commits  has a hashKey so its always available and can be reverted, but always remains with same hashKey
+cmd> $ git commit -m "initial Commit from gitbash"
+Error-----------------
+Author identity unknown
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: unable to auto-detect email address (got 'komat@LAPTOP-F4QG0KCM.(none)')
+komat@LAPTOP-F4QG0KCM MINGW64 /c/MyGitRepo/Learnings (main)
+cmd> $ git config --global user.email "komathi.kandregula@gmail.com"
+komat@LAPTOP-F4QG0KCM MINGW64 /c/MyGitRepo/Learnings (main)
+cmd>$ git config --global user.name "komathi"
+
+7. 
+8. staging
+9. branches
+10. checking status and inspecting commands
+11. push and pull
+12. undoing and redoing changes
+13. merging and conflict resolution
    
