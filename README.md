@@ -77,10 +77,26 @@ Untracked files:
         cmd> git show <commit-hashkey>   [-- gives extensive commit info]
         cmd  git show --name-only <hashkey>   [gies showrthand commit info]
         cmd> git reflog  [gives info about all commits on all branches]
-15. push and pull  -git collaboration commands
+15. push and pull  -git collaboration commands, sends commits to central reposity
         cmd>git push  - works if the new branches are aligned with remote repo else take the path and run below command
-       cmd> undoing and redoing cha$ git push --set-upstream origin featureBranch
-nges
-        cmd>
+        cmd> git push --set-upstream origin featureBranch    [adds featureBranch to the origin path]
+16. create new repo and file, then push the changes to git.
+        cmd> cd.. to new folder
+        cmd> git clone <git url> <new SpringBootMicroservices reponame>
+        cmd> cd <new SpringBootMicroservices folder>
+        cmd> git branch springBootMicroservices
+        cmd> git checkout springBootMicroservices
+        cmd> echo branch springBootMicroservice > "Hello World.java"
+        cmd> git add .
+        cmd> git commit -m "Firts checking to the springBootMicroservices Repository"
+        cmd> git log   [ u should see ur results]
+        cmd> git push --set-updateStream origin SpringBootMicroservices
+        cmd> cd.. /learnings[different repo]
+17. pull  -git collaboration commands  , retrives commits from central repository to the local project
+        cmd> cd to old folder for the new repo
+        cmd> git pull
+        cmd> git log
+        
+    
 19. merging and conflict resolution
    
